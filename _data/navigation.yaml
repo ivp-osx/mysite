@@ -1,0 +1,12 @@
+- name: Acasă
+  link: /
+- name: Servicii
+  link: servicii
+- name: Blog
+  link: /preturi.html
+- name: Portofoliu
+  link: portofoliu
+- name: Contact
+  link: programari
+- name: Despre
+  link: /despre.html

@@ -1,0 +1,17 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/mysite" # the subpath of your site, e.g. /blog
+title: "" # the name of your site, e.g. ACME Corp.
+
+
+plugins:
+  - jekyll-postcss
+
+
+
+# Follow buttons:
+facebook_url: "http://www.facebook.com/username"
+twitter_url: "http://www.twitter.com/username"
+linkedin_url: "http://www.linkedin.com/username"
+googleplus_url: "http://www.googleplus.com/username"
+pinterest_url: "http://www.pinterest.com/username"
+instagram_url: "http://www.instagram.com/username"
