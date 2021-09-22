@@ -8,6 +8,10 @@
     
     {{ content }}
 
+<button class="scrollToTop"> 
+    <!-- <div class="text-lg">▲</div>  -->
+    <img src="{{ site.baseurl }}/assets/img/arrow-thin-up.svg" alt="">
+  </button>
   <!-- Scripts -->
 
   <!-- JQuery 3.6.0 -->
@@ -25,16 +29,16 @@
   
   
   <!-- Hamburger Menu Navigation -->
-  <script src="{{ base.url | prepend: site.url }}/assets/js/hamburger.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/hamburger.js"></script>
   <!-- End Hamburger script -->
 
   <!-- Scroll-to-top button script-->
   <!-- <script src="{{ base.url | prepend: site.url }}/assets/js/scrollbtn.js"></script> -->
-  <script src="{{ base.url | prepend: site.url }}/assets/js/observer.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/observer.js"></script>
   <!-- End scroll-to-top button -->
 
   <!-- Flex masonry initializing script -->
-  <script src="{{ base.url | prepend: site.url }}/assets/js/flexmasonry.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/flexmasonry.js"></script>
   <script>
     FlexMasonry.init('.gridFM', {
       /* If `responsive` is `true`, `breakpointCols` will be used to determine how many columns a grid should have at a given responsive breakpoint. */
@@ -54,7 +58,7 @@
 
 
   <!-- Macy masonry initializing script -->
-  <script src="{{ base.url | prepend: site.url }}/assets/js/macy.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/macy.js"></script>
     <script>
         var masonry = new Macy({
             container: '#macy-container',
@@ -80,11 +84,11 @@
 
 
     <!-- Grid effects scripts for masonry layout -->
-    <script src="../assets/js/modernizr.custom.js"></script>
-    <script src="../assets/js/masonry.pkgd.min.js"></script>
-    <script src="../assets/js/imagesloaded.js"></script>
-    <script src="../assets/js/classie.js"></script>
-    <script src="../assets/js/AnimOnScroll.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/modernizr.custom.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/masonry.pkgd.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/imagesloaded.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/classie.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/AnimOnScroll.js"></script>
 
     <!-- Grid Effects Initializing script -->
     <script>
