@@ -14,7 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install Dependencies
-      run: npm install
+      run: |
+        npm install
        
     - name: Build the site in the jekyll/builder container
       run: |
@@ -22,6 +23,13 @@ jobs:
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
         
-    - uses: helaili/jekyll-action@v2
+    - name: 🔨 install dependencies & build site
+      uses: limjh16/jekyll-action-ts@v2
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        enable_cache: true
+        
+    - name: 🚀 deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
