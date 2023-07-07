@@ -1,9 +1,16 @@
 const colors = require('../colors')
 
 module.exports = {
-  purge: [],
+  // purge: [],
   presets: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class",
+  content: [
+        "./_drafts/**/*.{html,md}",
+        "./_posts/**/*.{html,md}",
+        "./_includes/**/*.{html,md}",
+        "./_layouts/**/*.{html,md}",
+        "./*.{html,md}",
+    ],
   theme: {
     screens: {
       sm: '640px',
@@ -292,7 +299,7 @@ module.exports = {
       normal: '400',
       medium: '500',
       semibold: '600',
-      bold: '700',
+      bold: 'plugins',
       extrabold: '800',
       black: '900',
     },
