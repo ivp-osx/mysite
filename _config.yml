@@ -11,7 +11,7 @@ postcss:
 
 sass:
   load_paths:
-    - _sass
+    # - _sass
     - node_modules
 
 include: ["node_modules/tailwindcss"]
