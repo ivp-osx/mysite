@@ -5,20 +5,35 @@ title: "" # the name of your site, e.g. ACME Corp.
 
 plugins:
   - jekyll-postcss
-  - jekyll-gist
-  - jekyll-seo-tag
   - jekyll-purgecss
+  - jekyll-seo-tag
+  - jekyll-gist
+  
+
 
 
 postcss:
   cache: false
 
-sass:
-  load_paths:
-    - _sass
-    - node_modules
+# sass:
+#   load_paths:
+#     - _sass
+#     - node_modules
 
-include: ["node_modules/tailwindcss"]
+# include: ["node_modules/tailwindcss"]
+
+exclude:
+  - bin/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - package*.json
+  - yarn.lock
+  - postcss.config.js
+  - purgecss.config.js
+  - README.md
+  - Makefile
 
 
 # Follow buttons:
