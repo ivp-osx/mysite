@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "postcss-import": "^14.0.1",
+    "postcss-import": "^15.1.0",
     "purgecss": "^1.1.0",
     "tiny-slider": "^2.9.3"
   },
