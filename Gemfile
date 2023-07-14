@@ -3,6 +3,7 @@ source "https://rubygems.org"
 # gem "jekyll", "~> 4.2.0"
 gem "jekyll"
 gem "webrick" # this is for ruby 3.0.0
+gem 'faraday-retry'
 
 # Gems loaded irrespective of site configuration.
 # group :jekyll_plugins do
