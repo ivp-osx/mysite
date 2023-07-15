@@ -1,12 +1,11 @@
 const colors = require('../colors')
 
 module.exports = {
-  // purge: [],
   presets: [],
   darkMode: "class",
   content: [
-        "./_drafts/**/*.{html,md}",
-        "./_posts/**/*.{html,md}",
+        // "./_drafts/**/*.{html,md}",
+        // "./_posts/**/*.{html,md}",
         "./_includes/**/*.{html,md}",
         "./_layouts/**/*.{html,md}",
         "./*.{html,md}",
