@@ -8,7 +8,7 @@ gem 'faraday-retry'
 # Gems loaded irrespective of site configuration.
 group :jekyll_plugins do
   gem 'jekyll-postcss'
-  gem 'jekyll-purgecss'
+  # gem 'jekyll-purgecss'
 end
 
 
